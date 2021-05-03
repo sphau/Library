@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel='stylesheet' href='style.css'>
+        <link href='library.js'>
+    </head>
+    <body>
+        <h1>This is Mah Library</h1>
+        <div class='center'>
+            <button id='newbook'>New Book</button>
+        </div>
+        <div class="form-popup" id="myForm">
+            <div class="popup-close">&times;</div>
+            <div class="form">
+                <div class="header">
+                    New Book Info
+                </div>
+                <div class="element">
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                </div>
+                <div class="element">
+                    <label for="author">Author</label>
+                    <input type="text" id="author">
+                </div>
+                <div class="element">
+                    <label for="pagenumber">Page Number</label>
+                    <input type="number" id="pagenumber">
+                </div>
+                <div class="element">
+                    <label for="read">
+                    <input type="radio" id="read" name="read-notRead">Read
+                    <input type="radio" id="notRead" name="read-notRead">Not Read
+                    </label>
+                </div>
+                <div class="element">
+                    <button id='savebook' onclick='closePopup()'>Save</button>
+                </div>
+            </div>
+        </div>
+        <div id='container'>
+
+        </div>
+        
+         <script src='library.js'></script>
+    </body>
+</html>
